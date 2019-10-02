@@ -1,1 +1,119 @@
+body {
+  margin: 0;
+  background: #009FFF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
+
+
+  height: 10px;
+  padding:10px;
+  margin:10px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  color: white;
+
+}
+
+h2 {
+  text-align: center;
+  color: #7289da;
+  font-size: 40px;
+
+}
+
+footer{
+  text-align: center;
+
+}
+
+ul {
+  text-align: center;
+
+}
+
+header {
+  background: rgb(32,34,37);
+  background: linear-gradient(90deg, rgba(32,34,37,1) 19%, rgba(0,130,200,1) 76%, rgba(102,125,182,1) 100%);}
+
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  display: inline;
+
+}
+
+nav ul {
+  margin: 0;
+  display: inline;
+
+}
+
+nav ul li {
+  color: white;
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px 15px
+  margin: 0;
+
+}
+
+nav ul li a {
+  color: white;
+
+}
+
+.container {
+  background: #b92b27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin: 5em;
+    padding: 5em;
+    border-radius: 60px;
+
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+
+    text-decoration: none;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 60px;
+}
+
+  .topnav {
+    overflow: hidden;
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 60px;
+
+}
+
+.topnav a:hover {
+  background-color: #677bc4;
+  color: white;
+
+}
+
+  a:hover:not(.active) {
+    background-color: #677bc4;
+
+  }
+
+  .active {
+    background-color:#5974d4;
+
+  }
+
+  .Installer {
+    text-align: center;
+    font-size: 30px;
+  }
