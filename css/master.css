@@ -4,13 +4,10 @@ body {
   background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-
-
   height: 10px;
   padding:10px;
   margin:10px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  font-family: -apple-system system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   color: white;
 
 }
@@ -33,17 +30,18 @@ ul {
 }
 
 header {
+  border-radius: 60px;
   background: rgb(32,34,37);
   background: linear-gradient(90deg, rgba(32,34,37,1) 19%, rgba(0,130,200,1) 76%, rgba(102,125,182,1) 100%);}
-  border-radius: 60px;
+
 
 }
 
 header h1 {
+  border-radius: 60px;
   text-align: center;
   margin: 0;
   display: inline;
-  border-radius: 60px;
 
 }
 
@@ -57,7 +55,7 @@ nav ul li {
   color: white;
   display: inline-block;
   list-style-type: none;
-  padding: 5px 15px
+  padding: 5px 15px;
   margin: 0;
 
 }
@@ -73,22 +71,22 @@ nav ul li a {
   background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     margin: 5em;
-    padding: 5em;
+    padding: 2em;
     border-radius: 60px;
     text-align: center;
 
   }
 
   .topnav a {
-    float: left;
+    float: center;
     display: block;
     color: #f2f2f2;
     text-align: center;
 
     text-decoration: none;
-    margin: 1em;
-    padding: 1em;
-    border-radius: 60px;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 10px;
 }
 
   .topnav {
@@ -112,7 +110,10 @@ nav ul li a {
   }
 
   .active {
-    background-color:#5974d4;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   }
 
@@ -126,9 +127,35 @@ nav ul li a {
   }
 
 .Installer {
-  border-radius: 60px;
+  border-radius: 10px;
 }
 
   iframe {
     border-radius: 30px;
   }
+
+.carrier {
+  max-width: 20%;
+}
+
+.theme {
+  border-radius: 60px;
+}
+
+.malware {
+  border-radius: 60px;
+}
+
+.cydia {
+  border-radius: 20px;
+}
+
+.siteicon {
+  border-radius: 60px;
+  width: 100px;
+  height: 100px;
+}
+
+.sailyicon {
+  border-radius: 10px;
+}
