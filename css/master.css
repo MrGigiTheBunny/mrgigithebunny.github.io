@@ -1,20 +1,28 @@
 body {
   margin: 0;
-  background: #009FFF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  height: 10px;
-  padding:10px;
-  margin:10px;
   font-family: -apple-system system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   color: white;
+  margin: 10px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 500% 500%;
+	animation: gradientBG 30s ease infinite;
+}
 
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 h2 {
   text-align: center;
-  color: #7289da;
+  color: #bac9ff;
   font-size: 40px;
 
 }
@@ -66,16 +74,26 @@ nav ul li a {
 }
 
 .container {
-  background: #b92b27;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+	background-size: 500% 500%;
+	animation: gradientBG 30s ease infinite;
+  margin: 5em;
+  padding: 2em;
+  border-radius: 60px;
+  text-align: center;
+}
 
-    margin: 5em;
-    padding: 2em;
-    border-radius: 60px;
-    text-align: center;
-
-  }
+@keyframes gradientBG {
+	100% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	0% {
+		background-position: 50% 0%;
+	}
+}
 
   .topnav a {
     float: center;
