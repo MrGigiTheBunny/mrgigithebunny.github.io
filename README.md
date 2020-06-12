@@ -1,1 +1,1 @@
-The main page is being rebuild from scratch, please be patient
+The main page is done rebuilding! It's now live on https://mrgigi.me/!
