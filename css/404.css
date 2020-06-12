@@ -1,3 +1,11 @@
+html{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar{
+  width: 0px;
+}
+
 body{
     background-color: #323232 !important;
     background: url("http://salehriaz.com/404Page/img/overlay_stars.svg");
