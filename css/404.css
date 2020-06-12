@@ -3,12 +3,16 @@ body{
     background: url("http://salehriaz.com/404Page/img/overlay_stars.svg");
   }
 
-  .container {
+/*  .container {
     border-radius: 50px;
     background: linear-gradient(145deg, #363636, #2d2d2d);
     box-shadow:  20px 20px 60px #2b2b2b,
                  -20px -20px 60px #3a3a3a;
     text-align: center;
+  } */
+
+  img {
+    margin: 0 auto;
   }
 
 @-moz-keyframes move-astronaut {
