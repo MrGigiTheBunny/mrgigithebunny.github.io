@@ -8,7 +8,7 @@ html::-webkit-scrollbar{
 
 body{
     background-color: #323232 !important;
-    background: url("http://salehriaz.com/404Page/img/overlay_stars.svg");
+    background-image: url('https://gistcdn.githack.com/MrGigiTheBunny/11c1a0e7997608efbf81c93a27d66f41/raw/4a33cd6b06d07cfd7b562457f92828cbf31e2751/stars.svg') !important;
   }
 
   @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
@@ -216,7 +216,7 @@ html, body{
   }
 
   .stars{
-      background: url(http://salehriaz.com/404Page/img/overlay_stars.svg) !important;
+      background-image: url(../../images/SVG/overlay_stars.svg) !important;
       background-repeat: repeat;
       background-size: contain;
       background-position: left top;
