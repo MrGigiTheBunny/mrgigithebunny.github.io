@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -23,6 +24,25 @@
     <meta content="A website that you don't care about" name="og:description">
   </head>
   <body>
+    <script>
+    $(document).ready(function () {
+      //Fade in delay for the background overlay (control timing here)
+      $("#bkgOverlay").delay(4800).fadeIn(400);
+      //Fade in delay for the popup (control timing here)
+      $("#delayedPopup").delay(5000).fadeIn(400);
+
+      //Hide dialouge and background when the user clicks the close button
+      $("#btnClose").click(function (e) {
+        HideDialog();
+        e.preventDefault();
+      });
+    });
+    //Controls how the modal popup is closed with the close button
+    function HideDialog() {
+      $("#bkgOverlay").fadeOut(400);
+      $("#delayedPopup").fadeOut(300);
+    }
+    </script>
     <div class="containers">
     <section class=hover>
   <h1>Gigi</h1>
@@ -46,17 +66,18 @@
   </section>
     <section>
       <h2>About Me</h2>
-      <p style="padding-bottom: 0.6em; padding: 10px;">Hi, I am Gigi. Gigi is not my real name, it's actually my pet bunny's name. I am 15 years old and my birthday is on 14/07. I am almost 24/7 on discord: Gigi#8581, I you want to chat with me please don't send a friend request, my dm's are open. I am a HUGE Apple <img class="appleinc" src="images/SVG/appleinc.svg" alt="Apple Inc."> fanboy.<br>
+      <p style="padding-bottom: 0.6em; padding: 10px;">I am 15 years old and my birthday is on 14th of July. I am almost 24/7 on discord: Gigi#8581. <br> I am also a HUGE Apple fanboy.<br><br>
+        I am very interested in coding/software development and also a little bit interested in hardware, I am also interested in space science. I just love jailbreaking and doing fun stuff with it. <br><br>
         I want to make tweaks and themes in the near future, I just need a macOS pc.</p>
     </section>
     <section>
       <h3>Things that I made</h3>
-        <a href="https://mrgigi.me/wwdc/" class="btn-go-home" target="_blank">A Yearly WWDC Event Countdown Timer</a>
-        <a href="https://mrgigi.me/firstwebsite/" class="btn-go-home" target="_blank">The first website I have ever made</a>
+        <a href="https://mrgigi.me/wwdc/" class="btn-go-home" target="_self">A Yearly WWDC Event Countdown Timer</a>
+        <a href="https://mrgigi.me/firstwebsite/" class="btn-go-home" target="_self">The first website I have ever made</a>
         </section>
       <section>
        <h3>Other Things</h3>
-       <p style="padding-bottom: 0.75em; padding-left: 0.25em; padding-right: 0.25em"> This website design is inspired by MattStar45, check <a href="https://acetaminophen.me/"> his website </a> out.</p>
+       <p style="padding-bottom: 0.75em; padding-left: 0.25em; padding-right: 0.25em"> This website design is inspired by MattStar45, check <a href="https://acetaminophen.me/" target="_blank"> his website </a> out.</p>
        </section>
        <section>
          <h3>Images of Gigi</h3>
@@ -93,6 +114,22 @@
     <div class="star"></div>
     <div class="star"></div>
     <div class="star"></div>
+</div>
+</div>
+<div id="bkgOverlay" class="backgroundOverlay"></div>
+
+<div id="delayedPopup" class="delayedPopupWindow">
+  <!-- This is the close button -->
+  <a href="#" id="btnClose" title="Click here to close">X</a>
+  <!-- This is the left side of the popup for the description -->
+  <div class="formDescription">
+    <h2>The WWDC Countdown Timer Is <span style="color: #40c348; font-weight: bold;">Live!</span></h2>
+  </div>
+      <div class="clear">
+        <a href="https://mrgigi.me/wwdc/" class="btn-go-home2" target="_self">Take Me There!</a>
+      </div>
+    </form>
+  </div>
 </div>
   </body>
 </html>
