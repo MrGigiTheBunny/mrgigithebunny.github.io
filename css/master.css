@@ -17,15 +17,16 @@ body{
  font-weight: 165;
   background-color: #212121 !important;
   text-align: center;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   background: url("http://salehriaz.com/404Page/img/overlay_stars.svg");
+  background-attachment: fixed;
 
 }
 section{
       color: #AEE1CD;
 border-radius: 14px;
 box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
-background: #4E5851;
+background: rgba(78, 88, 81,0.33);
 padding: 5px 0 15px 0;
   margin: 0 auto;
   font-size: 19px;
@@ -102,35 +103,35 @@ ul {
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
 
 @-moz-keyframes move-astronaut {
-    100% { -moz-transform: translate(-160px, -160px);}
+    100% { -moz-transform: translate(0px, 250px);}
 }
 @-webkit-keyframes move-astronaut {
-    100% { -webkit-transform: translate(-160px, -160px);}
+    100% { -webkit-transform: translate(0px, 250px);}
 }
 @keyframes move-astronaut{
-    100% { -webkit-transform: translate(-160px, -160px); transform:translate(-160px, -160px); }
+    100% { -webkit-transform: translate(0px, 250px); transform:translate(0px, 250px); }
 }
 @-moz-keyframes rotate-astronaut {
-    100% { -moz-transform: rotate(-720deg);}
+    100% { -moz-transform: rotate(360deg);}
 }
 @-webkit-keyframes rotate-astronaut {
-    100% { -webkit-transform: rotate(-720deg);}
+    100% { -webkit-transform: rotate(360deg);}
 }
 @keyframes rotate-astronaut{
-    100% { -webkit-transform: rotate(-720deg); transform:rotate(-720deg); }
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
 }
 
 .object_astronaut{
-    animation: rotate-astronaut 200s infinite linear both alternate;
+    animation: rotate-astronaut 10s infinite linear both;
 }
 
 .box_astronaut{
-    z-index: 110 !important;
-    position: absolute;
-    top: 60%;
-    right: 20%;
+    z-index: 4;
+    position: fixed;
+    top: 30%;
+    right: 5%;
     will-change: transform;
-    animation: move-astronaut 50s infinite linear both alternate;
+    animation: move-astronaut 30s infinite linear both alternate;
 }
 
 .btn-request{
@@ -175,4 +176,56 @@ ul {
     color: #a4d4c1;
     transform: scale(1.05);
     box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
+
+@-moz-keyframes rocket-movement { 100% {-moz-transform: translate(1000px,-50px);} }
+@-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1000px,-50px); } }
+@keyframes rocket-movement { 100% {transform: translate(1000px,-50px);} }
+@-moz-keyframes spin-earth { 100% { -moz-transform: rotate(-360deg); transition: transform 20s;  } }
+@-webkit-keyframes spin-earth { 100% { -webkit-transform: rotate(-360deg); transition: transform 20s;  } }
+@keyframes spin-earth{ 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); transition: transform 20s; } }
+
+.objects img{
+    pointer-events: none;
+}
+
+.object_rocket{
+    position: fixed;
+    transform: translateX(-1000px);
+    z-index: 2;
+    top: 50%;
+    pointer-events: none;
+    animation: rocket-movement 45s linear infinite both running;
+}
+
+
+.object_earth{
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    z-index: 1;
+    animation: spin-earth 30s infinite linear both;*/
+}
+
+.object_moon{
+  position: fixed;
+  top: 32%;
+  left: 15%;
+  width: 120px;
+  height: 120px;
+  margin:-60px 0 0 -60px;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.earth-moon{
+
 }
