@@ -14,7 +14,7 @@ html::-webkit-scrollbar{
 body{
   font-family: 'Varela', sans-serif;
   font-display: swap;
- font-weight: 165;
+  font-weight: 165;
   background-color: #212121 !important;
   text-align: center;
   scroll-behavior: smooth !important;
@@ -23,18 +23,20 @@ body{
 
 }
 section{
-      color: #AEE1CD;
-border-radius: 14px;
-box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
-background: rgba(78, 88, 81,0.33);
-padding: 5px 0 15px 0;
+  position: relative;
+  z-index: 8;
+  color: #AEE1CD;
+  border-radius: 14px;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+  background: rgba(78, 88, 81,0.33);
+  padding: 5px 0 15px 0;
   margin: 0 auto;
   font-size: 19px;
- font-weight: 165;
- margin-top: 1em;
- width: 98%;
- max-width: 600px;
- animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  font-weight: 165;
+  margin-top: 1em;
+  width: 98%;
+  max-width: 600px;
+  animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 @keyframes scale-in-center {
   0% {
@@ -48,6 +50,7 @@ padding: 5px 0 15px 0;
     opacity: 1;
   }
 }
+
 .icon {
     width: 10%;
     height: auto;
@@ -131,7 +134,7 @@ ul {
     top: 30%;
     right: 5%;
     will-change: transform;
-    animation: move-astronaut 30s infinite linear both alternate;
+    animation: move-astronaut 30s infinite both alternate;
 }
 
 .btn-request{
@@ -228,4 +231,124 @@ ul {
 
 .earth-moon{
 
+}
+
+/*Glowing Stars */
+@-moz-keyframes glow-star {
+    40% { -moz-opacity: 0.3;}
+    90%,100% { -moz-opacity: 1; -moz-transform: scale(2);}
+}
+@-webkit-keyframes glow-star {
+    40% { -webkit-opacity: 0.3;}
+    90%,100% { -webkit-opacity: 1; -webkit-transform: scale(2);}
+}
+@keyframes glow-star{
+    40% { -webkit-opacity: 0.3; opacity: 0.3;  }
+    90%,100% { -webkit-opacity: 1; opacity: 1; -webkit-transform: scale(2); transform: scale(2); border-radius: 99999px;}
+}
+
+.glowing_stars .star{
+    position: fixed;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 3px;
+    height: 3px;
+    opacity: 0.5;
+    will-change: opacity;
+}
+
+.glowing_stars .star:nth-child(1){
+    top: 80%;
+    left: 25%;
+    animation: glow-star 3s infinite ease-in-out alternate 1s;
+}
+.glowing_stars .star:nth-child(2){
+    top: 20%;
+    left: 40%;
+    animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+.glowing_stars .star:nth-child(3){
+    top: 25%;
+    left: 25%;
+    animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+.glowing_stars .star:nth-child(4){
+    top: 75%;
+    left: 80%;
+    animation: glow-star 1s infinite ease-in-out alternate 7s;
+}
+.glowing_stars .star:nth-child(5){
+    top: 90%;
+    left: 50%;
+    animation: glow-star 2s infinite ease-in-out alternate 9s;
+}
+.glowing_stars .star:nth-child(6){
+    top: 47%;
+    left: 48%;
+    animation: glow-star 3s infinite ease-in-out alternate 10s;
+}
+.glowing_stars .star:nth-child(7){
+    top: 48%;
+    left: 29%;
+    animation: glow-star 2s infinite ease-in-out alternate 10s;
+}
+.glowing_stars .star:nth-child(8){
+    top: 10%;
+    left: 34%;
+    animation: glow-star 1s infinite ease-in-out alternate 9s;
+}
+.glowing_stars .star:nth-child(9){
+    top: 20%;
+    left: 50%;
+    animation: glow-star 3s infinite ease-in-out alternate 8s;
+}
+.glowing_stars .star:nth-child(10){
+    top: 5%;
+    left: 10%;
+    animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+.glowing_stars .star:nth-child(11){
+    top: 37%;
+    left: 5%;
+    animation: glow-star 1s infinite ease-in-out alternate 7s;
+}
+.glowing_stars .star:nth-child(12){
+    top: 70%;
+    left: 15%;
+    animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+.glowing_stars .star:nth-child(13){
+    top: 70%;
+    left: 40%;
+    animation: glow-star 3s infinite ease-in-out alternate 6s;
+}
+.glowing_stars .star:nth-child(14){
+    top: 30%;
+    left: 90%;
+    animation: glow-star 2s infinite ease-in-out alternate 10s;
+}
+.glowing_stars .star:nth-child(15){
+    top: 35%;
+    left: 70%;
+    animation: glow-star 1s infinite ease-in-out alternate 4s;
+}
+.glowing_stars .star:nth-child(16){
+    top: 65%;
+    left: 60%;
+    animation: glow-star 2s infinite ease-in-out alternate 8s;
+}
+.glowing_stars .star:nth-child(17){
+    top: 90%;
+    left: 75%;
+    animation: glow-star 3s infinite ease-in-out alternate 5s;
+}
+.glowing_stars .star:nth-child(18){
+    top: 35%;
+    left: 85%;
+    animation: glow-star 2s infinite ease-in-out alternate 14s;
+}
+.glowing_stars .star:nth-child(19){
+    top: 27%;
+    left: 57%;
+    animation: glow-star 1s infinite ease-in-out alternate 13s;
 }
