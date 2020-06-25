@@ -1,1 +1,1 @@
-The main page is done rebuilding! It's now live on https://mrgigi.me/!
+I am redesigning the website (again), the old design will be live untill I am finished the new redesign fully. https://mrgigi.me/
