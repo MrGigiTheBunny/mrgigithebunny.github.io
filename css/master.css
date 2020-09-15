@@ -5,7 +5,6 @@
   margin-bottom: 1em;
 }
 html{
-  scrollbar-width: none;
   -ms-overflow-style: none;
 }
 html::-webkit-scrollbar{
@@ -14,8 +13,7 @@ html::-webkit-scrollbar{
 
 body{
   font-family: 'Varela', sans-serif;
-  font-display: swap;
-  font-weight: 165;
+  font-weight: 200;
   background-color: #212121 !important;
   text-align: center;
   scroll-behavior: smooth !important;
@@ -33,7 +31,7 @@ section{
   padding: 5px 0 15px 0;
   margin: 0 auto;
   font-size: 19px;
-  font-weight: 165;
+  font-weight: 200;
   margin-top: 1em;
   width: 98%;
   max-width: 600px;
@@ -79,14 +77,14 @@ h1{
   margin-left: 0;
   margin-right: 0;
   font-size: 31px;
-  font-weight: 185;
+  font-weight: 200;
   margin-bottom: 0.4em;
 }
-h2, h3, h4, h5
+h2, h3, h4, h5{
   pointer-events: none;
   padding-top: 0.5em;
   font-size: 28px;
-  font-weight: 175;
+  font-weight: 200;
   margin-bottom: 0.4em;
 }
 
@@ -99,8 +97,6 @@ h2, h3, h4, h5
   width: 70%; height: auto;
   border-radius: 30px;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
 
 @-moz-keyframes move-astronaut {
     100% { -moz-transform: translate(0px, 250px);}
@@ -180,8 +176,6 @@ h2, h3, h4, h5
     box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
-
 @-moz-keyframes rocket-movement { 100% {-moz-transform: translate(1000px,-50px);} }
 @-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1000px,-50px); } }
 @keyframes rocket-movement { 100% {transform: translate(1000px,-50px);} }
@@ -199,7 +193,7 @@ h2, h3, h4, h5
     z-index: 2;
     top: 50%;
     pointer-events: none;
-    animation: rocket-movement 45s linear infinite both running;
+    animation: rocket-movement 45s linear infinite both;
 }
 
 
@@ -208,7 +202,7 @@ h2, h3, h4, h5
     top: 40%;
     left: 5%;
     z-index: 1;
-    animation: spin-earth 30s infinite linear both;*/
+    animation: spin-earth 30s infinite linear both;
 }
 
 .object_moon{
@@ -378,7 +372,7 @@ h2, h3, h4, h5
   box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
   background: rgba(78, 88, 81,1);
   font-size: 19px;
-  font-weight: 165;
+  font-weight: 200;
   display: none;
   position: fixed;
   width: auto;

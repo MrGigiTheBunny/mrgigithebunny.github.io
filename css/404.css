@@ -1,5 +1,4 @@
 html{
-  scrollbar-width: none;
   -ms-overflow-style: none;
 }
 html::-webkit-scrollbar{
@@ -10,8 +9,6 @@ body{
     background-color: #323232 !important;
     background-image: url('https://gistcdn.githack.com/MrGigiTheBunny/11c1a0e7997608efbf81c93a27d66f41/raw/4a33cd6b06d07cfd7b562457f92828cbf31e2751/stars.svg') !important;
   }
-
-  @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
 
   @-moz-keyframes rocket-movement { 100% {-moz-transform: translate(1200px,-600px);} }
   @-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1200px,-600px); } }
@@ -220,7 +217,7 @@ body{
       transform: translateX(-50px);
       top: 75%;
       pointer-events: none;
-      animation: rocket-movement 10s linear infinite both running;
+      animation: rocket-movement 10s linear infinite both;
   }
 
   .spin-earth-on-hover{
@@ -246,7 +243,7 @@ html, body{
       top: 20%;
       left: 15%;
       z-index: 90;
-      animation: spin-earth 100s infinite linear both;*/
+      animation: spin-earth 100s infinite linear both;
   }
 
   .object_moon{
